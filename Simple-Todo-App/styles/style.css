@@ -1,0 +1,78 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background: white;
+}
+
+.taskList {
+  width: 50vw;
+  padding: 20px;
+  background: white;
+  -webkit-box-shadow: 3px 3px 5px gainsboro, -3px -3px 5px gainsboro;
+          box-shadow: 3px 3px 5px gainsboro, -3px -3px 5px gainsboro;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.taskList .taskItem {
+  padding: 10px 0 10px 0;
+}
+
+.taskList .taskItem #taskComplete {
+  background: blue;
+  width: 14%;
+  color: white;
+  padding: 2px 5px 2px 5px;
+  float: right;
+  border: blue solid 1px;
+  border-radius: 5px;
+  margin: 0 0 0 5px;
+}
+
+.taskList .taskItem #taskComplete:hover {
+  cursor: pointer;
+}
+
+.taskList .taskItem #taskDelete {
+  background: red;
+  width: 10%;
+  color: white;
+  padding: 2px 5px 2px 5px;
+  float: right;
+  border: red solid 1px;
+  border-radius: 5px;
+  margin: 0 0 0 5px;
+}
+
+.taskList .taskItem #taskDelete:hover {
+  cursor: pointer;
+}
+
+.taskList .newTaskInput {
+  width: 70%;
+  background: whitesmoke;
+  border: gainsboro solid 1px;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 10px 0 10px 5px;
+}
+
+.taskList #newTask {
+  background: black;
+  width: 25%;
+  color: white;
+  padding: 2px 5px 2px 5px;
+  float: right;
+  border: black solid 1px;
+  border-radius: 5px;
+  margin: 0 0 0 5px;
+  margin-top: 10px;
+  font-size: 2vw;
+}
+
+.taskList #newTask:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

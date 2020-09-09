@@ -1,0 +1,56 @@
+* { font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+$primaryColor: white;
+$lineSpacing: 10px;
+
+@mixin styleButton($btnBackground, $btnWidth) {
+    background: $btnBackground;
+    width: $btnWidth;
+    color: white;
+    padding: 2px 5px 2px 5px;
+    float: right;
+    border: $btnBackground solid 1px;
+    border-radius: 5px;
+    margin: 0 0 0 5px;
+
+    &:hover { cursor: pointer; }
+}
+
+body {
+    background: $primaryColor;
+}
+
+.taskList {
+    width: 50vw;
+    padding: 20px;
+    background: $primaryColor;
+    box-shadow: 3px 3px 5px gainsboro, -3px -3px 5px gainsboro;
+    border-radius: 5px;
+    margin: 0 auto;
+
+    .taskItem {
+        padding: $lineSpacing 0 $lineSpacing 0;
+
+        #taskComplete {
+            @include styleButton(blue, 14%);
+        }
+        #taskDelete {
+            @include styleButton(red, 10%);
+        }
+    }
+
+    .newTaskInput {
+        width: 70%;
+        background: whitesmoke;
+        border: gainsboro solid 1px;
+        border-radius: 5px;
+        margin-top: $lineSpacing;
+        padding: $lineSpacing 0 $lineSpacing 5px;
+    }
+
+    #newTask {
+        @include styleButton(black, 25%);
+        margin-top: $lineSpacing;
+        font-size: 2vw;
+    }
+}

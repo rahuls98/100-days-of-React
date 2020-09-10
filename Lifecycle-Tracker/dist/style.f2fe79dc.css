@@ -9,12 +9,16 @@ body {
 
 #root {
   height: 95vh;
+  width: 45vw;
+  float: left;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .counterContainer {
+  width: 30vw;
+  height: 30vh;
   background: white;
   border: gainsboro solid 1px;
   border-radius: 7px;
@@ -41,6 +45,17 @@ button:disabled {
   border: grey solid 1px;
   background: gainsboro;
   color: gray;
+}
+
+#tracker {
+  width: 50vw;
+  height: 85vh;
+  float: left;
+  border: gainsboro solid 1px;
+  border-radius: 7px;
+  overflow-y: scroll;
+  padding-left: 15px;
+  box-shadow: 3px 3px 8px grey, -3px -3px 8px grey;
 }
 
 /*# sourceMappingURL=/style.f2fe79dc.css.map */

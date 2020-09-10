@@ -1,4 +1,5 @@
 import React from "react";
+import logTrigger from '../components/Trigger';
 
 class Counter extends React.Component {
     constructor(props) {
@@ -6,26 +7,27 @@ class Counter extends React.Component {
         this.state = {
             count: 0
         }
-        console.log("Counter component - constructor()");
+        logTrigger("Counter component - constructor()");
     }
 
     handleIncrement = () => this.setState({ count: this.state.count+1 });
     handleDecrement = () => this.setState({ count: this.state.count-1 });
 
     componentDidMount() {
-        console.log("Counter component - componentDidMount()");
+        logTrigger("Counter component - componentDidMount()");
     }
 
     componentDidUpdate() {
-        console.log("Counter component - componentDidUpdate()");
+        logTrigger("Counter component - componentDidUpdate()");
     }
 
     componentWillUnmount() {
-        console.log("Counter component - componentWillUnmount()");
+        logTrigger("Counter component - componentWillUnmount()");
     }
 
     render() {
-        console.log("Counter component - render()");
+        logTrigger("Counter component - render()");
+
         return (
             <div>
                 <p>Count: {this.state.count}</p>

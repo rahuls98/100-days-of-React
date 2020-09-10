@@ -28285,7 +28285,21 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.development.js":"../node_modules/react-dom/cjs/react-dom.development.js"}],"../components/Counter.jsx":[function(require,module,exports) {
+},{"./cjs/react-dom.development.js":"../node_modules/react-dom/cjs/react-dom.development.js"}],"../components/Trigger.jsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var logTrigger = function logTrigger(event) {
+  document.getElementById("tracker").insertAdjacentHTML('beforeend', "<p>\uD83D\uDD39 ".concat(event, "<p><hr>"));
+};
+
+var _default = logTrigger;
+exports.default = _default;
+},{}],"../components/Counter.jsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -28294,6 +28308,8 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
+
+var _Trigger = _interopRequireDefault(require("../components/Trigger"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28348,29 +28364,29 @@ var Counter = /*#__PURE__*/function (_React$Component) {
     _this.state = {
       count: 0
     };
-    console.log("Counter component - constructor()");
+    (0, _Trigger.default)("Counter component - constructor()");
     return _this;
   }
 
   _createClass(Counter, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      console.log("Counter component - componentDidMount()");
+      (0, _Trigger.default)("Counter component - componentDidMount()");
     }
   }, {
     key: "componentDidUpdate",
     value: function componentDidUpdate() {
-      console.log("Counter component - componentDidUpdate()");
+      (0, _Trigger.default)("Counter component - componentDidUpdate()");
     }
   }, {
     key: "componentWillUnmount",
     value: function componentWillUnmount() {
-      console.log("Counter component - componentWillUnmount()");
+      (0, _Trigger.default)("Counter component - componentWillUnmount()");
     }
   }, {
     key: "render",
     value: function render() {
-      console.log("Counter component - render()");
+      (0, _Trigger.default)("Counter component - render()");
       return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "Count: ", this.state.count), /*#__PURE__*/_react.default.createElement("button", {
         onClick: this.handleIncrement
       }, "Increment"), /*#__PURE__*/_react.default.createElement("button", {
@@ -28384,7 +28400,7 @@ var Counter = /*#__PURE__*/function (_React$Component) {
 
 var _default = Counter;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js"}],"../components/CounterContainer.jsx":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../components/Trigger":"../components/Trigger.jsx"}],"../components/CounterContainer.jsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -28395,6 +28411,8 @@ exports.default = void 0;
 var _react = _interopRequireDefault(require("react"));
 
 var _Counter = _interopRequireDefault(require("./Counter"));
+
+var _Trigger = _interopRequireDefault(require("../components/Trigger"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28435,7 +28453,7 @@ var CounterContainer = /*#__PURE__*/function (_React$Component) {
       mount: false
     };
     _this.handleMount = _this.handleMount.bind(_assertThisInitialized(_this));
-    console.log("CounterContainer component - constructor()");
+    (0, _Trigger.default)("CounterContainer component - constructor()");
     return _this;
   }
 
@@ -28450,17 +28468,17 @@ var CounterContainer = /*#__PURE__*/function (_React$Component) {
   }, {
     key: "componentDidMount",
     value: function componentDidMount() {
-      console.log("CounterContainer component - componentDidMount()");
+      (0, _Trigger.default)("CounterContainer component - componentDidMount()");
     }
   }, {
     key: "componentDidUpdate",
     value: function componentDidUpdate() {
-      console.log("CounterContainer component - componentDidUpdate()");
+      (0, _Trigger.default)("CounterContainer component - componentDidUpdate()");
     }
   }, {
     key: "render",
     value: function render() {
-      console.log("CounterContainer component - render()");
+      (0, _Trigger.default)("CounterContainer component - render()");
       var counter = this.state.mount ? /*#__PURE__*/_react.default.createElement(_Counter.default, null) : "";
       return /*#__PURE__*/_react.default.createElement("div", {
         className: "counterContainer"
@@ -28479,7 +28497,7 @@ var CounterContainer = /*#__PURE__*/function (_React$Component) {
 
 var _default = CounterContainer;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","./Counter":"../components/Counter.jsx"}],"app.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./Counter":"../components/Counter.jsx","../components/Trigger":"../components/Trigger.jsx"}],"app.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -28487,6 +28505,8 @@ var _react = _interopRequireDefault(require("react"));
 var _reactDom = require("react-dom");
 
 var _CounterContainer = _interopRequireDefault(require("../components/CounterContainer"));
+
+var _Trigger = _interopRequireDefault(require("../components/Trigger"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28527,20 +28547,20 @@ var App = /*#__PURE__*/function (_React$Component) {
     _this = _super.call(this, props);
 
     _defineProperty(_assertThisInitialized(_this), "componentDidMount", function () {
-      console.log("App - componentDidMount()");
+      (0, _Trigger.default)("App - componentDidMount()");
     });
 
     _this.state = {
       logs: []
     };
-    console.log("App - constructor()");
+    (0, _Trigger.default)("App - constructor()");
     return _this;
   }
 
   _createClass(App, [{
     key: "render",
     value: function render() {
-      console.log("App - render()");
+      (0, _Trigger.default)("App - render()");
       return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_CounterContainer.default, {
         append: this.appendEvent
       }));
@@ -28551,7 +28571,7 @@ var App = /*#__PURE__*/function (_React$Component) {
 }(_react.default.Component);
 
 (0, _reactDom.render)( /*#__PURE__*/_react.default.createElement(App, null), document.getElementById("root"));
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","../components/CounterContainer":"../components/CounterContainer.jsx"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","../components/CounterContainer":"../components/CounterContainer.jsx","../components/Trigger":"../components/Trigger.jsx"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -28579,7 +28599,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63736" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53317" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

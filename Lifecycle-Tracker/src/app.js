@@ -1,6 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 import CounterContainer from '../components/CounterContainer';
+import logTrigger from '../components/Trigger';
 
 class App extends React.Component {
     constructor(props) {
@@ -9,15 +10,15 @@ class App extends React.Component {
             logs : []
         }
 
-        console.log("App - constructor()");
+        logTrigger("App - constructor()");
     }
 
     componentDidMount = () => {
-        console.log("App - componentDidMount()");
+        logTrigger("App - componentDidMount()");
     }
 
     render() {
-        console.log("App - render()");
+        logTrigger("App - render()");
 
         return (
             <div>

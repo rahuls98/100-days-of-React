@@ -1,5 +1,6 @@
 import React from 'react';
 import Counter from './Counter';
+import logTrigger from '../components/Trigger';
 
 class CounterContainer extends React.Component {
     constructor(props) {
@@ -9,7 +10,7 @@ class CounterContainer extends React.Component {
             mount: false
         }
         this.handleMount = this.handleMount.bind(this);
-        console.log("CounterContainer component - constructor()");
+        logTrigger("CounterContainer component - constructor()");
     }
 
     handleMount() {
@@ -20,15 +21,15 @@ class CounterContainer extends React.Component {
     }
 
     componentDidMount() {
-        console.log("CounterContainer component - componentDidMount()");
+        logTrigger("CounterContainer component - componentDidMount()");
     }
 
     componentDidUpdate() {
-        console.log("CounterContainer component - componentDidUpdate()");
+        logTrigger("CounterContainer component - componentDidUpdate()");
     }
 
     render () {
-        console.log("CounterContainer component - render()");
+        logTrigger("CounterContainer component - render()");
 
         var counter = this.state.mount? <Counter />:""
         return (

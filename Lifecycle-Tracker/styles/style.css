@@ -1,0 +1,44 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(53, 53, 53);
+}
+
+body {
+  background: white;
+}
+
+#root {
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.counterContainer {
+  background: white;
+  border: gainsboro solid 1px;
+  border-radius: 7px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 3px 3px 8px grey, -3px -3px 8px grey;
+}
+
+button {
+  background: white;
+  padding: 5px 8px 5px 8px;
+  border-radius: 5px;
+  border: grey solid 1px;
+  margin-right: 10px;
+  transition: 0.5s ease;
+}
+button:hover { 
+  cursor: pointer; 
+  background: rgb(0, 162, 255);
+  color: white;
+  transition: 0.5s ease;
+}
+button:disabled {
+  border: grey solid 1px;
+  background: gainsboro;
+  color: gray;
+}

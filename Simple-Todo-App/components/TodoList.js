@@ -35,7 +35,7 @@ class TodoList extends React.Component {
 
     handleDelete = (taskIndex) => {
         var tasks = this.state.tasks.slice();
-        tasks.splice(taskIndex);
+        tasks.splice(taskIndex, 1);
         this.setState({tasks: tasks});
     }
 

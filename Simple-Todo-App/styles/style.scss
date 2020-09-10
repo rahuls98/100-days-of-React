@@ -17,16 +17,22 @@ $lineSpacing: 10px;
 }
 
 body {
-    background: $primaryColor;
+    background: rgb(200, 253, 255);
+}
+
+#root {
+    height: 97vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .taskList {
     width: 50vw;
     padding: 20px;
-    background: $primaryColor;
-    box-shadow: 3px 3px 5px gainsboro, -3px -3px 5px gainsboro;
+    background: white;
+    box-shadow: 3px 3px 8px grey, -3px -3px 8px grey;
     border-radius: 5px;
-    margin: 0 auto;
 
     .taskItem {
         padding: $lineSpacing 0 $lineSpacing 0;

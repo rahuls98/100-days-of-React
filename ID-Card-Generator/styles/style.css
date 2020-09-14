@@ -1,0 +1,135 @@
+* {
+  font-size: 1.5vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  height: 95vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.formComponent {
+  width: 40vw;
+  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.formComponent .formRow td {
+  padding-bottom: 5vh;
+}
+
+.formComponent .formRow label {
+  padding-right: 20px;
+}
+
+.formComponent .formRow #countControl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.formComponent .formRow .formBtn {
+  width: 5vw;
+  background: transparent;
+  border: grey solid 1px;
+  border-radius: 5px;
+}
+
+.formComponent .formRow .formBtn:hover {
+  background: #006eff;
+  color: white;
+  cursor: pointer;
+}
+
+.formComponent .formRow #access {
+  width: 10vw;
+  margin-right: 20px;
+}
+
+.formComponent .formRow #accessAdd {
+  width: 5vw;
+}
+
+.formComponent .formRow .spanContainer {
+  height: 30px;
+  background: gray;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.formComponent .formRow .tagPill {
+  background: gainsboro;
+  margin-right: 10px;
+  padding: 5px 8px 5px 8px;
+  border-radius: 10px;
+}
+
+.formComponent .formRow .spanBtn {
+  background: transparent;
+  border: none;
+  margin-left: 10px;
+}
+
+.formComponent .formRow .spanBtn:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.cardComponent {
+  width: 40vw;
+  float: left;
+  /* border: black solid 1px; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cardComponent .card {
+  width: 50%;
+  border: gainsboro solid 1px;
+  border-radius: 10px;
+  padding: 40px 20px;
+  -webkit-box-shadow: 3px 3px 10px grey, -1px -1px 10px grey;
+          box-shadow: 3px 3px 10px grey, -1px -1px 10px grey;
+}
+
+.cardComponent .card #cardImage {
+  margin-bottom: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 10vw;
+  color: gray;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,98 @@
+* {
+    font-size: 1.5vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@mixin xyCenter() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body { 
+    height: 95vh;
+    @include xyCenter();
+}
+
+.formComponent {
+    width: 40vw;
+    float: left;
+    @include xyCenter();
+
+    .formRow {
+        td { padding-bottom: 5vh; }
+
+        label { padding-right: 20px; }
+
+        #countControl {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .formBtn { 
+            width: 5vw; 
+            background: transparent;
+            border: grey solid 1px;
+            border-radius: 5px;
+
+            &:hover {
+                background: rgb(0, 110, 255);
+                color: white;
+                cursor: pointer;
+            }
+        }
+
+        #access { 
+            width: 10vw; 
+            margin-right: 20px 
+        }
+        #accessAdd { width: 5vw; }
+
+        .spanContainer {
+            height: 30px;
+            background: gray;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .tagPill {
+            background: gainsboro;
+            margin-right: 10px;
+            padding: 5px 8px 5px 8px;
+            border-radius: 10px;
+        }
+
+        .spanBtn {
+            background: transparent;
+            border: none;
+            margin-left: 10px;
+
+            &:hover{ 
+                color: red;
+                cursor: pointer; 
+            }
+        }
+    }
+}
+
+.cardComponent {
+    width: 40vw;
+    float: left;
+    /* border: black solid 1px; */
+    @include xyCenter();
+
+    .card {
+        width: 50%;
+        border: gainsboro solid 1px;
+        border-radius: 10px;
+        padding: 40px 20px;
+        box-shadow: 3px 3px 10px grey, -1px -1px 10px grey;
+
+        #cardImage {
+            margin-bottom: 10vh;
+            @include xyCenter();
+            font-size: 10vw;
+            color: gray;
+        }
+    }
+}

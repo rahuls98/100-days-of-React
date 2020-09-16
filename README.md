@@ -4,10 +4,9 @@
   <tr>
     <td>Day 1</td>
     <td>
-      <br>
-      <strong>Simple Todo app using class based components.</strong>
-      <br><br>
-      <img src="./Results/Day1.png"/>
+      <h3>Simple Todo App</h3> 
+      <p>A todo app built completely using class based components and state. [<a href="./Simple-Todo-App">Code</a>]</p>
+      <kbd><img width="400" src="./Results/Day1.png"/></kbd><br><br>
     </td>
     <td><i>ReactJS, Sass, Parcel, JSX</i></td>
   </tr>
@@ -15,10 +14,9 @@
   <tr>
     <td>Day 2</td>
     <td>
-      <br>
-      <strong>Understanding class based components and lifecycle methods.</strong>
-      <br><br>
-      <img src="./Results/Day2.png"/>
+      <h3>Lifecycle Tracker</h3> 
+      <p>A simple counter app that helps understand class based components and their different lifecycle methods. [<a href="./Lifecycle-Tracker">Code</a>]</p>
+      <kbd><img width="400" src="./Results/Day2.png"/></kbd><br><br>
     </td>
     <td><i>ReactJS, CSS, Parcel, JSX</i></td>
   </tr>
@@ -26,13 +24,10 @@
   <tr>
     <td>Day 3</td>
     <td>
-      <br>
-      <strong>ID Card generator using functional components and hooks.</strong>
-      <br><br>
-      <img src="./Results/Day3.png"/>
+      <h3>ID Card Generator</h3> 
+      <p>An application built using functional components, with introduction to the useState hook. [<a href="./ID-Card-Generator">Code</a>]</p>
+      <kbd><img width="400" src="./Results/Day3.png"/></kbd><br><br>
     </td>
-    <td><i>ReactJS, useState() Hook, Sass, Parcel, JSX</i></td>
+    <td><i>ReactJS, useState(), Sass, Parcel, JSX</i></td>
   </tr>
 </table>
-  
-  

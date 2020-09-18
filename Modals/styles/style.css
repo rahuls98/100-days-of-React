@@ -1,0 +1,73 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  font-size: 1.5vw;
+}
+
+body { margin: 0 !important; }
+
+#root {
+  height: 100vh;
+  background: #1d1d1d;
+  padding: 10vh 0 0 5vw;
+}
+
+table {
+  width: 25vw;
+  padding: 30px;
+  border: gainsboro solid 1px;
+  border-radius: 5px;
+} 
+table td { padding-bottom: 25px; }
+table tr:last-child td { padding-bottom: 0; }
+table button { 
+  width: 100%;
+  background: transparent;
+  border: tomato solid 1px;
+  border-radius: 5px;
+  padding: 5px 8px 5px 8px;
+  transition: 0.8s; 
+} table button:hover {
+  background: tomato;
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+.normal {
+  opacity: 1;
+  transition: 0.8s;
+}
+
+.dim {
+  opacity: 0.5;
+  transition: 0.8s;
+}
+
+.modalBox {
+  position: absolute;
+  top: 10vh;
+  left: 50%;
+  width: 30vw;
+  transform: translateX(-15vw);
+
+  border-radius: 7px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5), -2px -2px 8px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  background: #181818;
+}
+.modalBox #btnContainer {
+  display: flex;
+  justify-content: center;
+}
+.modalBox #btnContainer button {
+  width: 30%;
+  background: transparent;
+  border: tomato solid 1px;
+  border-radius: 5px;
+  padding: 5px 8px 5px 8px;
+  transition: 0.8s; 
+} .modalBox #btnContainer button:hover {
+  background: tomato;
+  cursor: pointer;
+  transition: 0.8s;
+}

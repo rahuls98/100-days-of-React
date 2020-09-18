@@ -30,4 +30,14 @@
     </td>
     <td><i>ReactJS, useState(), Sass, Parcel, JSX</i></td>
   </tr>
+  
+  <tr>
+    <td>Day 4</td>
+    <td>
+      <h3>Modal</h3> 
+      <p>A modal component with introduction to Portals, Fragments, useState and useEffect. [<a href="./Modals">Code</a>]</p>
+      <kbd><img width="400" src="./Results/Day4.png"/></kbd><br><br>
+    </td>
+    <td><i>ReactJS, useState(), useEffect(), Portals, CSS, Parcel, JSX</i></td>
+  </tr>
 </table>

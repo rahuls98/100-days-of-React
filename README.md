@@ -40,4 +40,14 @@
     </td>
     <td><i>ReactJS, useState(), useEffect(), Portals, CSS, Parcel, JSX</i></td>
   </tr>
+  
+  <tr>
+    <td>Day 5</td>
+    <td>
+      <h3>Shopping Cart</h3> 
+      <p>A simple shopping cart application built using class based components and the Context API. [<a href="./Shopping-Cart">Code</a>]</p>
+      <kbd><img width="400" src="./Results/Day5.png"/></kbd><br><br>
+    </td>
+    <td><i>ReactJS, Context API, CSS, Parcel, JSX</i></td>
+  </tr>
 </table>

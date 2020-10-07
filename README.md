@@ -1,4 +1,4 @@
-# 100-days-of-React
+# Days-of-React
 
 <table>
   <tr>
